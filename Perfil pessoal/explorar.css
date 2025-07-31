@@ -1,0 +1,104 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  background: linear-gradient(135deg, #014d4d, #60c6c6);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  color: #133f3f;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  flex-shrink: 0;
+  color: #045757;
+}
+
+main#tela-explorar {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.barra-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  box-shadow: 2px 1px 5px rgba(96, 198, 198, 0.5);
+  background-color: rgba(240, 255, 255, 0.85);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.barra-perfil:hover {
+  transform: scale(1.02);
+}
+
+.barra-perfil img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(96, 198, 198, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.barra-perfil img:hover {
+  transform: scale(1.05);
+}
+
+.texto-pf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 18px;
+  color: #045757;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  color: #355555;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

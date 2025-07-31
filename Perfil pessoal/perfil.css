@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  background: linear-gradient(135deg, #014d4d, #60c6c6);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  color: #133f3f;
+}
+
+/* Header centralizado no topo */
+header {
+  text-align: center;
+  padding: 20px 0;
+  flex-shrink: 0; /* não deixa encolher */
+}
+
+/* Main expande para ocupar o espaço entre header e footer */
+main.perfil-main {
+  flex: 1;
+  max-width: 600px;
+  background: rgba(240, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 30px 40px;
+  margin: 0 auto; /* centraliza horizontalmente */
+  box-shadow: 0 8px 25px rgba(96, 198, 198, 0.3);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Foto do perfil */
+.perfil-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(96, 198, 198, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.perfil-foto:hover {
+  transform: scale(1.05);
+}
+
+/* Títulos */
+h1, h2 {
+  color: #045757;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* Seções */
+section {
+  margin-bottom: 25px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Listas */
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  background: #60c6c630;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #045757;
+  letter-spacing: 1px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #60c6c670;
+  padding: 10px 15px;
+  font-weight: 600;
+  color: #045757;
+}
+
+th {
+  background-color: #60c6c620;
+}
+
+/* Links */
+.links-externos a {
+  color: #017474;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.links-externos a:hover {
+  color: #045757;
+  text-decoration: underline;
+}
+
+/* Footer fixado embaixo, centralizado */
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  color: #355555;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+/* Animação do gradiente */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
