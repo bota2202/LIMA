@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <picture>
+        <source media="(max-Width: 400px)" srcset="mustangP.jpg" type="image/jpg">
+        <img src="mustangp.png" alt="A imagem flexível funciona">
+
+        <source media="(max-Width: 200px)" srcset="mustangM.jpg" type="image/jpg">
+        <img src="mustangm.png" alt="A imagem flexível funciona">
+
+        <source media="(max-Width: 200px)" srcset="mustangG.jpg" type="image/jpg">
+        <img src="mustangg.png" alt="A imagem flexível funciona">
+    </picture>
+</body>
+</html>
