@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* Problema de acentuação */
+
+h2 {
+    color: blueviolet;
+    font-family: "Ubuntu", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url('Asimovian-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, yellow, red, purple, blue);
+  background-size: 400% 400%;
+  animation: gradientmove 8s ease infinite;
+}
+
+@keyframes gradientmove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
