@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine 2025: Loja de Produtos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vitrine 2025</h1>
+    <p>Moda, Essência e Estilo em Alta Definição</p>
+    <button id="cart-toggle">Carrinho 🛒</button>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <div class="slides">
+        <div class="slide active">
+          <img src="../Imagens/img1.jpg" alt="Camisa branca">
+          <div class="info">
+            <h3>Camisa branca Tayson</h3>
+            <p>R$129,90</p>
+            <button onclick="addToCart('Produto 1',199.90)">Adicionar</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="../Imagens/img2.jpg" alt="Camisa vermelha">
+          <div class="info">
+            <h3>Camisa vermelha USA knife</h3>
+            <p>R$149,90</p>
+            <button onclick="addToCart('Produto 2',299.90)">Adicionar</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="../Imagens/img3.jpg" alt="Produto 3">
+          <div class="info">
+            <h3>Moletom amarelo La Nature</h3>
+            <p>R$299,90</p>
+            <button onclick="addToCart('Produto 3',159.90)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pontinhos -->
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+  </section>
+
+
+    <!-- Produtos -->
+    <section class="products">
+      <div class="product-card">
+        <img src="../Imagens/img4.jpg" alt="Produto 4">
+        <h3>Air max</h3>
+        <p>R$589,90</p>
+        <button onclick="addToCart('Produto 4',89.90)">Adicionar</button>
+      </div>
+      <div class="product-card">
+        <img src="../Imagens/img5.jpg" alt="Produto 5">
+        <h3>Relógio Lonus Banhado  ouro</h3>
+        <p>R$499,90</p>
+        <button onclick="addToCart('Produto 5',499.90)">Adicionar</button>
+      </div>
+      <div class="product-card">
+        <img id="img6" src="../Imagens/img6.jpg"" alt="Produto 6">
+        <h3>Vestido florido</h3>
+        <p>R$129,90</p>
+        <button onclick="addToCart('Produto 6',129.90)">Adicionar</button>
+      </div>
+    </section>
+
+    <!-- Carrinho -->
+    <aside id="cart" class="cart-closed">
+      <div class="cart-header">
+        <h2>Carrinho</h2>
+        <button id="cart-close">✖</button>
+      </div>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <p>Total: R$<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p id="footer">&copy; 2025 Vitrine 2025. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
